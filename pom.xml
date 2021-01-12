@@ -20,6 +20,7 @@
         <module>demo</module>
         <module>eureka-server</module>
         <module>adapter-server</module>
+        <module>core-server</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

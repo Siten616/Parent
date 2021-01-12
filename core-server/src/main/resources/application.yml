@@ -1,11 +1,11 @@
 server:
-  port: 9901
+  port: 9910
   servlet:
-    context-path: /adapter-server
+    context-path: /core-server
 
 spring:
   application:
-    name: adapter-server
+    name: core-server
 eureka:
   client:
     serviceUrl:
