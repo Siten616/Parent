@@ -1,6 +1,8 @@
 server:
   port: 8761
-#  context-path: /eureka-server
+  servlet:
+    context-path: /eureka-server
+
 spring:
   application:
     name: eureka-server
@@ -9,7 +11,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://127.0.0.1:${server.port}/eureka-server/eureka
-#    instance:
-#      preferIpAddress: true
-#      instanceId: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
+      defaultZone: http://localhost:${server.port}/eureka-server/eureka
+  instance:
+    preferIpAddress: true
+    instanceId: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}

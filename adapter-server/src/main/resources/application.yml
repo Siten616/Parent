@@ -1,0 +1,15 @@
+server:
+  port: 9901
+  servlet:
+    context-path: /adapter-server
+spring:
+  application:
+    name: adapter-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka-server/eureka/
+  instance:
+    preferIpAddress: true
+    instanceId: ${spring.application.name}:${server.port}
