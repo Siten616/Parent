@@ -1,6 +1,6 @@
 package com.st.remote;
 
-import com.st.dto.Food;
+import com.st.domain.Food;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

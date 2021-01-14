@@ -1,6 +1,6 @@
 package com.st.service.impl;
 
-import com.st.dto.Food;
+import com.st.domain.Food;
 import com.st.remote.CoreRemote;
 import com.st.service.FoodService;
 import org.springframework.beans.factory.annotation.Autowired;

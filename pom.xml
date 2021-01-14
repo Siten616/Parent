@@ -21,6 +21,7 @@
         <module>eureka-server</module>
         <module>adapter-server</module>
         <module>core-server</module>
+        <module>common-server</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

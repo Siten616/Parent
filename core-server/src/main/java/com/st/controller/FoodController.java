@@ -1,6 +1,6 @@
 package com.st.controller;
 
-import com.st.entity.Food;
+import com.st.domain.Food;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -20,6 +20,5 @@ public class FoodController {
         Food food = new Food(1, "苹果", "5");
         System.out.println(food);
         return food;
-
     }
 }

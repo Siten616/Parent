@@ -1,6 +1,6 @@
 package com.st.service;
 
-import com.st.dto.Food;
+import com.st.domain.Food;
 
 /**
  * @Author: shentao
