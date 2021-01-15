@@ -1,2 +1,15 @@
 server:
-  port: 9091
+  port: 9020
+  servlet:
+    context-path: /demo-server
+
+spring:
+  application:
+    name: demo-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka-server/eureka/
+  instance:
+      preferIpAddress: true
+      instanceId: ${spring.application.name}:${server.port}
