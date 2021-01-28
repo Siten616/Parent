@@ -8,10 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
-        <module name="common-server" />
         <module name="eureka-server" />
-        <module name="adapter-server" />
+        <module name="common-server" />
         <module name="core-server" />
+        <module name="adapter-server" />
       </profile>
     </annotationProcessing>
   </component>
