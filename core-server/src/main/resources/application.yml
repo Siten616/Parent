@@ -3,9 +3,20 @@ server:
   servlet:
     context-path: /core-server
 
+serverAddress: 106.14.244.179
+
 spring:
   application:
     name: core-server
+  rabbitmq:
+    # 集群地址，用逗号分隔
+    addresses: ${serverAddress}:4369,${serverAddress}:5671,${serverAddress}:5672
+    connection-timeout: 15000
+    password: guest
+    # 使用启用消息确认模式,选择确认类型为交互
+    publisher-confirm-type: correlated
+    username: guest
+    virtual-host: /
 eureka:
   client:
     serviceUrl:
