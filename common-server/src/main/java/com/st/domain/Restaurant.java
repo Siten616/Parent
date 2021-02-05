@@ -17,4 +17,15 @@ public class Restaurant {
     private String type;
     /**菜品*/
     private List<Food> foods;
+
+    @Override
+    public String toString() {
+        return "Restaurant{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", type='" + type + '\'' +
+                ", foods=" + foods +foods.size()+
+                '}';
+    }
 }
